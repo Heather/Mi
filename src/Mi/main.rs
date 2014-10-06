@@ -30,7 +30,13 @@ fn main() {
     if matches.opt_present("version") {
         println!("Mi 1.0.0");
     }
-    println!("Please, kill me ");
+    
+    λ(||{
+        ξ::<()> (|| {
+                println!("Please, kill me ");
+            }
+        );
+    });
     λ(||{
         ξ::<()> (|| { loop {
                 (|r:|s:|t:|||||{r(|t:|||{t()})})
