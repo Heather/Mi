@@ -18,7 +18,7 @@ fn main() {
     ];
     let matches = match getopts::getopts(args.tail(), opts) {
         Ok(m) => m,
-        Err(f) => fail!("Invalid options\n{}", f)
+        Err(f) => panic!("Invalid options\n{}", f)
     };
     if matches.opt_present("help") {
         println!("Mi 1.0.0");
